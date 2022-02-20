@@ -1,0 +1,22 @@
+﻿<Page x:Class="Banks_system.TransactionsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Banks_system"
+      mc:Ignorable="d"
+      Title="Page1" Height="450" Width="800">
+
+    <Grid x:Name="TransactionPage" Background="#FFE7E7E7">
+        <Label x:Name="NotifyUserLab" Height="35" Margin="523,138,43,276.6" FontSize="18"/>
+        <Label Content="Ваш баланс:" Height="35" Margin="69,173,620,241.6" FontSize="18"/>
+        <Label x:Name="TransPageBalanceLab" Margin="180,173,471,241.6" FontSize="16" FontFamily="Goudy Stout" FontWeight="Bold" Content="" Foreground="#FF235F24"/>
+        <TextBox x:Name="EnterRecipientCardNum" Height="30" Margin="523,178,43,241.6" FontSize="16"/>
+        <Button x:Name="NotifyUserBut" Content="Проверить" Height="40" Width="150" Margin="523,213,127,196.6" FontSize="16" BorderBrush="#FF293DA8" Foreground="#FF293DA8" Click="NotifyUserBut_Click"/>
+        <Label Content="Номер карты:" Height="35" Margin="393,173,282,241.6" FontSize="18"/>
+        <Button x:Name="ExecuteTransBut" Content="Перевести" Margin="267,346,274,27.6" FontSize="16" BorderBrush="#FF31BD2E" Foreground="#FF31BD2E" Background="White" Click="ExecuteTransBut_Click"/>
+        <Button x:Name="ExitBut" Content="Назад" Margin="10,10,680,398.6" FontSize="16" BorderBrush="Black" Foreground="Black" Background="White"/>
+        <Label Content="К переводу" Height="35" Margin="69,243,620,171.6" FontSize="18"/>
+        <TextBox x:Name="EnterTransMoneyTextBox" Height="30" Margin="180,248,471,171.6" FontSize="16"/>
+    </Grid>
+</Page>
